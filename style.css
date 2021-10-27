@@ -1,0 +1,99 @@
+/*=== RESETTING THE DEFAULT CSS/ RESETANDO O CSS PREDEFINIDO============*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*=== VARIABLES/ VARIÁVEIS ======================*/
+:root{
+  /* colors */
+  --title-color: #05479d;
+  --text-color: #000;
+  --body-color: #fff;
+  --base-color: #3e6ac3;
+  --text-color-light: #020e4a;
+  --base-color-alt: 
+
+
+   /* Fonts/ Fontes*/
+   --title-font-size: 1.875rem;
+   --subtitle-font-size: 1rem;
+
+
+   --title-font: 'Zen Kaku Gothic New', sans-serif;
+   --body-font: 'Noto Sans', sans-serif;
+}
+
+/*=== BASE ============================*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 400 1rem var(--body-font);
+  color: var(--text-color);
+  background: var(--body-color);
+  --webkit-font-smoothing: antialiased;
+}
+
+.title {
+  font: 700 var(--title-font-size) var(--title-font);
+  color: var(--title-color);
+  --webkit-font-smoothing: auto;
+}
+
+.destaque {
+  background-image: url(assets/img/destaque-1.jpg);
+  height: 80vh;
+  display: flex; 
+ width: 100%;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.fundo-escuro{
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.fundo-texto{
+  background-color: rgba(255, 255, 255, 0.192);
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.button {
+  background-color: var(--base-color);
+  color: var(--text-color-light);
+  height: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 0.25rem;
+  font: 500 1rem var(--body-font);
+  transition: background 0.3s;
+}
+
+.button:hover,
+.button:active {
+  background: var(--base-color-alt);
+}
