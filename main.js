@@ -38,22 +38,6 @@ function changeHeaderWhenScroll() {
 }
 
 
-/* TESTIMONIAL CAROUSEL/ CARROSSEL DE DEPOIMENTOS - SLIDER SWIPER*/
-const swiper = new Swiper('.swiper', {
-  slidesPerView: 1,
-  pagination: {
-    el: '.swiper-pagination'
-  },
-  mousewheel: true,
-  keyboard: true,
-  breakpoints: { //Breakpoint 767 (tablet's)\ Ponto de quebra 767 (tablet's)
-    767: {
-      slidesPerView: 2, //How many slides will be shown\ Quantos slides serão mostrados
-      setWrapperSize: true
-    }
-  }
-});
-
 /* ScrollReveal: Show elements when scrolling page/ ScrollReveal: Mostrar elementos quando der scroll na página */
 const scrollReveal = ScrollReveal({
   origin: 'top',

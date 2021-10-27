@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Adog - Adoção de cães e gatos</title>
+  <!-- SOURCES OF ICONS/ FONTES DE ÍCONES-->
+  <link rel="stylesheet" href="assets/fonts/style.css">
   <!--FAVICON-->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <!--CSS STYLE/ ESTILO CSS-->
@@ -24,20 +26,22 @@
   <header id="header">
     <nav class="container">
       <!--LOGO/ LOGOTIPO-->
-      <a href="#" class="logo">Adog</a>
+      <a href="#" class="logo title">Adog</a>
       <!--MENU-->
       <div class="menu">
         <ul class="grid">
           <li><a class="title" href="#home">Início</a></li>
           <li><a class="title" href="#about">Sobre</a></li>
           <li><a class="title" href="#services">Serviços</a></li>
-          <li><a class="title" href="#testimonials">Depoimentos</a></li>
           <li><a class="title" href="#contact">Contato</a></li>
         </ul>
       </div>
+      <div class="toggle "></div>
+      <div class="toggle "></div>
     </nav>
   </header>
   <!-- END OF MENU/ FIM DO MENU-->
+  <main>
   <section class="section" id="home">
     <div class="container grid">
       <div class="destaque image">
@@ -98,6 +102,7 @@
           </header>
           <div class="cards grid">
             <div class="card">
+              <i class=""></i>
               <h3 class="title">Resgate</h3>
               <p>
                 A maior parte dos resgates são realizados após denúncias recebidas na Instituição Adog, o resgate ocorre
@@ -106,7 +111,8 @@
             </div>
             <div class="cards grid">
               <div class="card">
-                <h3 class="title">Pós resgate</h3>
+                <i class=""></i>
+                <h3 class="title">Cuidados</h3>
                 <p>
                   Após o resgate os animais são levados a uma clínica veterinária parceira para verificar o estado da
                   saúde e tratar feridas, após a bateria de exames o animal. Após os exames ele recebe banho e
@@ -115,6 +121,7 @@
               </div>
               <div class="cards grid">
                 <div class="card">
+                  <i class=""></i>
                   <h3 class="title">Adoção Responsável</h3>
                   <p>
                     Após ser castrado e passar pela reabilitação, o animal é encaminhado a adoção responsável. As
@@ -142,13 +149,28 @@
 
           <div class="links">
             <ul class="grid">
-              <li>11 95652-1457</li>
-              <li> Rua Santa Eulália, 86 - Santana</li>
-              <li>contato@adog.com</li>
+              <li><i class="icon-phone"></i>11 95652-1457</li>
+              <li><i class="icon-location2"></i> Rua Santa Eulália, 86 - Santana</li>
+              <li><i class="icon-envelop"></i>contato@adog.com</li>
             </ul>
           </div>
         </div>
       </section>
+
+      <!--HELP/ AJUDA-->
+      <section class="section" id="help">
+        <div class="container grid">
+          <div class="text grid">
+            <h2 class="title">
+              Quer ajudar a Adog?</h2>
+            <p>
+              Nosso projeto segue vivo graças a ajuda da comunidade, você pode doar através do Paypal, Pix ou diretamente na Instituição.
+            </p>
+            <a href="#paypal"><i class="icon-paypal"></i>Adog</a>
+            <a href="#pix"><i class="icon-"></i></a>
+      </section>
+  </main>
+
 
       <!--FOOTER/ RODAPÉ-->
     <footer class="section">
@@ -160,22 +182,20 @@
         </div>
 
         <div class="social">
-          <a href="https://www.instagram.com/" target="_blank">
+          <a href="https://www.instagram.com/" target="_blank"><i class="icon-instagram"></i>
           </a>
-          <a href="https://www.facebook.com/" target="_blank">
+          <a href="https://www.facebook.com/" target="_blank"><i class="icon-facebook"></i>
           </a>
           <a
             href="https://www.youtube.com/"
             target="_blank"
-          >
+          ><i class="icon-youtube"></i>
           </a>
         </div>
       </div>
     </footer>
 
     <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
-     <!-- SWIPER SCRIPT-->
-     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
      <!-- scrollreveal -->
      <script src="https://unpkg.com/scrollreveal"></script>
      <!--MAIN SCRIPT-->

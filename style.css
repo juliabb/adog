@@ -23,12 +23,16 @@ img {
 :root{
   /* colors */
   --title-color: #05479d;
-  --text-color: #000;
-  --body-color: #fff;
+  
+ 
   --base-color: #3e6ac3;
+  --base-color-second: #f6e535;
+  --base-color-alt: #51b3ed;
+  --title-color: #164298 ;
+  --text-color: #000;
+  --text-color-alt: #423352;
   --text-color-light: #020e4a;
-  --base-color-alt: 
-
+  --body-color: #fff;
 
    /* Fonts/ Fontes*/
    --title-font-size: 1.875rem;
@@ -61,10 +65,14 @@ body {
   background-image: url(assets/img/destaque-1.jpg);
   height: 80vh;
   display: flex; 
- width: 100%;
- background-repeat: no-repeat;
- background-size: cover;
+  width: 100%;
+  margin-top: 5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
 }
+
 
 .fundo-escuro{
   background-color: rgba(0, 0, 0, 0.6);
@@ -74,12 +82,21 @@ body {
 }
 
 .fundo-texto{
-  background-color: rgba(255, 255, 255, 0.192);
+  background-color: rgba(255, 255, 255, 0.295);
   width: 85%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px;
 }
+
+.title-fundo{
+  color: var(--text-color);
+}
+
+.fundo-texto p {
+  color: var();
+}
+
 
 .button {
   background-color: var(--base-color);
@@ -89,11 +106,319 @@ body {
   align-items: center;
   padding: 0 2rem;
   border-radius: 0.25rem;
-  font: 500 1rem var(--body-font);
+  font: 800 1rem var(--body-font);
   transition: background 0.3s;
 }
 
 .button:hover,
 .button:active {
   background: var(--base-color-alt);
+  color: var(--body-color)
 }
+
+/*=== LAYOUT\ Estilo ============================*/
+.container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.section {
+  padding: calc(5rem + var(--header-height)) 0;
+}
+
+.section .title {
+  margin-bottom: 1rem;
+}
+
+.section .subtitle {
+  font-size: var(--subtitle-font-size);
+}
+
+.section header {
+  margin-bottom: 4rem;
+}
+
+
+#header {
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 2rem;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: var(--body-color);
+  width: 100%;
+  height: 3rem;
+}
+
+#header .logo{
+  color: var(--base-color)
+}
+
+#header.scroll {
+  background: var(--base-color);
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.281);
+}
+
+#header.scroll .logo          {
+  color: white;
+  transition: 0.2s;
+}
+
+#header.scroll .icon-menu {
+  color: white;
+  transition: 0.2s;
+}
+
+/*=== NAVIGATION/ NAVEGAÇÃO ============================*/
+
+nav {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav ul li {
+  text-align: center;
+}
+
+nav ul li a {
+  transition: color 0.2s;
+  position: relative;
+}
+
+nav ul li a:hover, nav ul li a:active{
+  color: var(--base-color-second);
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: var(--title-color);
+
+  position: absolute;
+  left: 0;
+  bottom: -1.5rem;
+  transition: width 0.2s;
+}
+
+nav ul li a:hover::after, nav ul li a.active::after {
+  width: 100%;
+}
+
+nav .menu {
+  opacity: 0;
+  visibility: hidden;
+  top: -20rem;
+  transition: 0.2s;
+}
+
+nav .menu ul {
+  display: none;
+}
+
+/* SHOW MENU/ MOSTRAR MENU*/
+nav.show .menu {
+  opacity: 1;
+  visibility: visible;
+
+  background: var(--text-color-light);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: grid;
+  place-content: center;
+}
+
+nav.show .menu ul {
+  display: grid;
+}
+
+nav.show ul.grid {
+  gap: 4rem;
+}
+
+/* TOGGLE MENU ICON (OPEN, CLOSE OPTIONS) / ALTERNAR ÍCONE DO MENU(ABRIR, FECHAR OPÇÕES)*/
+.toggle {
+  color: var(--base-color-second);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+nav .icon-cross {
+  visibility: hidden;
+  opacity: 0;
+
+  position: absolute;
+  top: -1.5rem;
+  right: 1.5rem;
+  top: -1.5rem;
+  transition: 0.2s;
+}
+
+nav.show div.icon-cross {
+  visibility: visible;
+  opacity: 1;
+  top: 1.5rem;
+}
+
+/*=== HOME/ PRINCIPAL ============================*/
+#home {
+  overflow: hidden;
+}
+
+#home .container {
+  margin: 0;
+}
+
+
+#home .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+
+#home .text h1 {
+  margin-bottom: 1rem;
+}
+
+#home .text p {
+  margin-bottom: 2rem;
+}
+
+/*=== ABOUT/ SOBRE ============================*/
+#about {
+  background: white;
+}
+
+#about .container {
+  margin: 0;
+}
+
+#about .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/*=== SERVICES/ SERVIÇOS ============================*/
+.cards.grid {
+  gap: 1.5rem;
+}
+
+.card {
+  padding: 3.625rem 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-bottom: 0.25rem solid var(--base-color);
+  border-radius: 0.25rem 0.25rem 0 0;
+  text-align: center;
+}
+
+.card .title {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/*====  CONTACT\ Contato ============================ */
+#contact .grid {
+  gap: 4rem;
+}
+
+#contact .text p {
+  margin-bottom: 2rem;
+}
+
+#contact .button i,
+#contact ul li i {
+  font-size: 1.5rem;
+  margin-right: 0.625rem;
+}
+
+#contact ul.grid {
+  gap: 2rem;
+}
+
+#contact ul li {
+  display: flex;
+  align-items: center;
+}
+
+#contact ul li i {
+  color: var(--base-color);
+}
+
+/*====  FOOTER/ RODAPÉ ============================ */
+footer {
+  background: var(--base-color);
+}
+
+footer.section{
+  padding: 4rem 0;
+}
+
+footer .logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+  color: var(--text-color-light);
+  margin-bottom: 0.75rem;
+}
+
+footer .social a {
+  margin-right: 2rem;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+footer .social a:hover,
+footer .social a:active {
+  transform: translateY(-15px);
+}
+
+/*====  BACK TO TOP/ VOLTAR PARA CIMA ^ ============================ */
+.back-to-top {
+  background: var(--base-color);
+  color: var(--text-color-light);
+
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+
+  padding: 0.5rem;
+  clip-path: circle();
+
+  font-size: 1.5rem;
+  line-height: 0;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: 0.3s;
+  transform: translateY(100%);
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.back-to-top:hover,
+.back-to-top:active {
+  opacity: 0.5;
+}
+
+
