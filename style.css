@@ -466,4 +466,16 @@ footer .social a:active {
 }
 
 
+}
+/* medium devices: 767px > */
+@media (min-width: 767px) {
+  img {
+    width: 70%;
+    margin-top: 1rem;
+  }
+  /*=== SERVICES/ SERVIÇOS ============================*/
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 
