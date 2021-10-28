@@ -14,9 +14,20 @@ a {
   text-decoration: none;
 }
 
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 img {
-  width: 100%;
+  width: 80%;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*=== VARIABLES/ VARIÁVEIS ======================*/
@@ -108,12 +119,27 @@ body {
   border-radius: 0.25rem;
   font: 800 1rem var(--body-font);
   transition: background 0.3s;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
 }
 
 .button:hover,
 .button:active {
   background: var(--base-color-alt);
   color: var(--body-color)
+}
+
+#about .image{
+  margin-top: 0.5rem;
+  height: 100%;
+  width: 100%;
+
+}
+
+.button span i{
+ margin-left: 0.5rem;
+ margin-right: 0.5rem;
 }
 
 /*=== LAYOUT\ Estilo ============================*/
@@ -131,8 +157,15 @@ body {
   padding: calc(5rem + var(--header-height)) 0;
 }
 
+.section p{
+  margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
 .section .title {
   margin-bottom: 1rem;
+  margin-top: 3rem;
+  margin-left: 1rem;
 }
 
 .section .subtitle {
@@ -252,7 +285,7 @@ nav.show ul.grid {
 
 /* TOGGLE MENU ICON (OPEN, CLOSE OPTIONS) / ALTERNAR ÍCONE DO MENU(ABRIR, FECHAR OPÇÕES)*/
 .toggle {
-  color: var(--base-color-second);
+  color: var(--base-color);
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -331,6 +364,10 @@ nav.show div.icon-cross {
 }
 
 /*====  CONTACT\ Contato ============================ */
+.text .title-adocao{
+  margin-top: 1.5rem;
+}
+
 #contact .grid {
   gap: 4rem;
 }
@@ -372,6 +409,11 @@ footer .logo {
   margin-bottom: 1.5rem;
 }
 
+.logo-alt {
+  color: var(--body-color);
+  font-size: 1.5rem;
+}
+
 footer .brand p {
   color: var(--text-color-light);
   margin-bottom: 0.75rem;
@@ -381,6 +423,8 @@ footer .social a {
   margin-right: 2rem;
   transition: 0.3s;
   display: inline-block;
+  text-decoration: none;
+  color: var(--base-color-second);
 }
 
 footer .social a:hover,
@@ -420,5 +464,6 @@ footer .social a:active {
 .back-to-top:active {
   opacity: 0.5;
 }
+
 
 
