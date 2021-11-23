@@ -113,15 +113,20 @@ body {
   background-color: var(--base-color);
   color: var(--text-color-light);
   height: 3.5rem;
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  padding: 0 2rem;
+  justify-content: center;
   border-radius: 0.25rem;
   font: 800 1rem var(--body-font);
   transition: background 0.3s;
-  margin-bottom: 1.5rem;
-  margin-top: 0.5rem;
-  margin-left: 1rem;
+  margin: 2rem;
+  width: 80%;
+}
+
+.adotar {
+  width: 60%;
+  justify-content: center;
+  align-items: center;
 }
 
 .button:hover,
@@ -484,7 +489,15 @@ footer .social a:active {
 /* RESPONSIVE/ RESPONSIVO*/
 /*========= MEDIA QUERIES =========*/
 /* extra large devices: 1200px > */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  .button.adotar {
+    width: 20%;
+  }
+
+  section .image img {
+    width: 40%;
+  }
+}
 /* large devices: 1023px > */
 @media (min-width: 1023px) {
   #header {
@@ -502,8 +515,6 @@ footer .social a:active {
   #header.scroll .logo {
     font-size: 2.5rem;
   }
-
-
 
    /*Navigation menu\ Menu navegação*/
    nav .menu {
@@ -539,87 +550,89 @@ footer .social a:active {
     color: var(--body-color);
   }
 
-  #home{
-    margin-top: 5rem;
-  }
-
-  .button {
-    padding: 2.5rem;
-    font-size: 1.5rem;
-  }
-
-  .button .whatsapp{
-    /* ARRUMAR TEXTO*/
-  }
- 
-  .card {
-    margin-bottom: 2rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-  #contact .text p{
-    font-size: 1.5rem;
-  }
-
-  .back-to-top {
-    right: 2rem;
-    bottom: 2rem;
-    padding: 2rem;
-    font-size: 2rem;
-  }
-
-  .back-to-top.back-top {
-    font-size: 1.5rem;
-  }
+  .section.button.adotar {
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    margin-left: 64%;
+    }
 
 }
 /* large devices: 992px > */
 @media (min-width: 992px) {
+  .image img {
+  width: 50%;
+  }
+
   .fundo-texto{
     width: 90%;
     padding: 7rem;
   }
+
   :-webkit-any(article, aside, nav, section) h1 {
     font-size: 3em;
-}
-.section p, .section .subtitle{
+  }
+
+  .section p, .section .subtitle{
   margin-left: 3rem;
   font-size: 1.5rem;
-}
-.section .title {
+  }
+
+  .section .title {
   margin-left: 3rem;
   font-size: 3em;
-}
-.button {
+  }
+
+  .cards.grid .card {
+    gap: 1.5rem;
+  }
+
+  .button {
   margin-bottom: 5rem;
   margin-top: 2rem;
   margin-left: 64%;
-}
+  }
+  
+  .container .button.whatsapp {
+    width: 35%;
+    margin-top: 5rem;
+    margin-left: 64%;
+  }
 
-footer .social a, footer .logo{
+  footer .social a, footer .logo{
  margin-left: 2rem;
-}
+  }
 
-#contact ul li{
+  #contact ul li{
   font-size: 1.5rem;
-}
-#help {
+  }
+
+  #help {
   margin-top: 5rem;
   margin-bottom: 4rem;
-}
+  }
 
-#help .doacao a{
+  #help .doacao a{
   font-size: 1.5rem;
   padding: 1rem;
-}
+  }
 
+  .back-to-top {
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
 }
 /* medium devices: 767px > */
 @media (min-width: 767px) {
   img {
-    width: 70%;
+    width: 60%;
     margin-top: 1rem;
   }
+
+  .container {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
+
   /*=== SERVICES/ SERVIÇOS ============================*/
   .card {
     padding-left: 3rem;
@@ -632,5 +645,16 @@ footer .social a, footer .logo{
 
   #contact .adocao{
     margin-top: 5rem;
+  }
+
+  .adotar {
+    width: 30%;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    margin-left: 64%;
+  }
+
+  .section .title {
+    margin-left: 2rem;
   }
 }
