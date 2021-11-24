@@ -25,7 +25,7 @@ Bibliotecas
 Utilitários
 
 - [Pexels](https://www.pexels.com/pt-br/)
-- [IconMoon](https://icomoon.io/app/#/select)
+- [Favicon.io](https://favicon.io/)
 
 ## 💻 Projeto
 
