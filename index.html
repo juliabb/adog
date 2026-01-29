@@ -2,32 +2,39 @@
 <html lang="pt-br">
 
 <head>
-  <!-- PAGE INFORMATION/ INFORMAÇÕES DA PÁGINA-->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Adog - Adoção de cães e gatos</title>
-  <!-- SOURCES OF ICONS/ FONTES DE ÍCONES-->
-  <link rel="stylesheet" href="assets/fonts/style.css">
-  <!--FAVICON-->
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <!--CSS STYLE/ ESTILO CSS-->
-  <link rel="stylesheet" href="style.css" />
-  <!--FONTS Noto Sans and Zen Kaku Gothic New/ FONTES Noto Sans e Zen Kaku Gothic New -->
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/dog.png" type="image/x-icon" />
+
+  <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Zen+Kaku+Gothic+New:wght@300;400;700&display=swap"
-    rel="stylesheet" />
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- HEADER/ CABEÇALHO-->
+  <!-- HEADER -->
   <header id="header">
     <nav class="container">
-      <!--LOGO/ LOGOTIPO-->
-      <a href="#" class="logo title">Adog</a>
-      <!--MENU-->
+      <!-- LOGO -->
+      <a href="#" class="logo">
+        <i class="fas fa-paw"></i>
+        <span class="title">Adog</span>
+      </a>
+
+      <!-- MENU -->
       <div class="menu">
         <ul class="grid">
           <li><a class="title" href="#home">Início</a></li>
@@ -36,173 +43,258 @@
           <li><a class="title" href="#contact">Contato</a></li>
         </ul>
       </div>
-      <div class="toggle icon-menu"></div>
-      <div class="toggle icon-cross"></div>
+
+      <!-- TOGGLE MENU MOBILE -->
+      <div class="toggle">
+        <i class="fas fa-bars icon-menu"></i>
+        <i class="fas fa-times icon-cross"></i>
+      </div>
     </nav>
   </header>
-  <!-- END OF MENU/ FIM DO MENU-->
+
   <main>
+    <!-- HOME SECTION -->
     <section class="section" id="home">
       <div class="container grid">
         <div class="destaque image">
           <div class="fundo-escuro">
             <div class="fundo-texto">
-              <h1 class="title-fundo">
-                Adog - Adoção de cães e gatos</h1>
-              <p>Adotar é um ato de amor. Quando um animal é adotado outro pode ser resgatado e preparado para também
-                ganhar uma nova chance.</p>
+              <h1 class="title-fundo">Adog - Adoção de cães e gatos</h1>
+              <p class="subtitle">Adotar é um ato de amor. Quando um animal é adotado, outro pode ser resgatado e
+                preparado para também ganhar uma nova chance.</p>
+              <div class="cta-buttons">
+                <a href="#contact" class="button adotar">
+                  <i class="fas fa-heart"></i> Adotar agora
+                </a>
+                <a href="#about" class="button secondary">
+                  <i class="fas fa-info-circle"></i> Saiba mais
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="text">
-        <h2 class="title container grid">Adog é uma instituição que incentiva a adoção de cães e gatos na cidade de São Paulo.</h2>
-        <p>Os cães e gatos são resgatados, recebendo alimentação e cuidado por veterinários e depois são colocados a
-          disposição para adoção.</p>
-        <a href="#contact" class="button adotar container"><span><i class="icon-heart"></i></span>Adotar agora</a>
+    <!-- INTRO SECTION -->
+    <section class="section intro">
+      <div class="container grid">
+        <div class="text">
+          <h2 class="title">Adog é uma instituição que incentiva a adoção de cães e gatos na cidade de São Paulo.</h2>
+          <p class="description">Os cães e gatos são resgatados, recebendo alimentação e cuidado por veterinários e
+            depois são colocados a disposição para adoção responsável.</p>
+
+          <div class="stats">
+            <div class="stat-item">
+              <i class="fas fa-home"></i>
+              <h3>500+</h3>
+              <p>Animais Adotados</p>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-heartbeat"></i>
+              <h3>100%</h3>
+              <p>Castrados</p>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-calendar-alt"></i>
+              <h3>2018</h3>
+              <p>Desde</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!--ABOUT SECTION/ SEÇÃO SOBRE-->
+    <!-- ABOUT SECTION -->
     <section class="section" id="about">
       <div class="container grid">
         <div class="image">
-          <img src="assets/img/sobre-nos-adog.png"
+          <img
+            src="https://images.unsplash.com/photo-1554456854-55a089fd4cb2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
             alt="Logo Adog - Palavra Adog em branco com fundo quadrado em azul" />
         </div>
         <div class="text container">
           <h2 class="title">Sobre nós</h2>
-          <p>
-            Fundado em Outubro de 2018, a Adog tem a missão de ajudar e cuidar de animais vítimas de abandono e maus
-            tratos, realizando resgates de animais feridos e em situações de risco.
+          <p class="about-text">
+            <i class="fas fa-paw icon"></i> Fundado em Outubro de 2018, a Adog tem a missão de ajudar e cuidar de
+            animais vítimas de abandono e maus tratos, realizando resgates de animais feridos e em situações de risco.
           </p>
-          <br>
-          <p>
-            Mantemos um abrigo com cerca de 200 animais, entre cães e gatos, todos resgatados das ruas, onde eles são
-            protegidos, alimentados e aguardam pela chance de serem adotados.
+          <p class="about-text">
+            <i class="fas fa-home icon"></i> Mantemos um abrigo com cerca de 200 animais, entre cães e gatos, todos
+            resgatados das ruas, onde eles são protegidos, alimentados e aguardam pela chance de serem adotados.
           </p>
-          <br>
-          <p>
-            Adog fica em São Paulo, na região metropolitana, em um terreno de cerca de 28.000 metros quadrados. Com
-            apoio de centros cirúrgicos com atendimento veterinário, são necessários cerca de 250.000 reais por mês
-            para sustentá-los, com ajuda de doações, parcerias e vendas na loja que tornam nosso sonho possível.
+          <p class="about-text">
+            <i class="fas fa-map-marker-alt icon"></i> Adog fica em São Paulo, na região metropolitana, em um terreno de
+            cerca de 28.000 metros quadrados. Com apoio de centros cirúrgicos com atendimento veterinário, são
+            necessários cerca de 250.000 reais por mês para sustentá-los.
           </p>
         </div>
       </div>
     </section>
-    <!--HOW IT WORKS SECTION/ SEÇÃO COMO FUNCIONA-->
-    <section class="section" id="services">
-      <div class="container grid">
-        <header>
+
+    <!-- HOW IT WORKS SECTION -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header">
           <h2 class="title">Como funciona?</h2>
           <p class="subtitle">
-            Como a <span>Adog</span> trabalha, desde o resgate até a adoção. Resgatando, cuidando e dando um novo lar
-            para os animais.
+            Como a <span class="highlight">Adog</span> trabalha, desde o resgate até a adoção. Resgatando, cuidando e
+            dando um novo lar para os animais.
           </p>
-        </header>
+        </div>
+
         <div class="cards grid">
           <div class="card">
-            <i class=""></i>
+            <div class="card-icon">
+              <i class="fas fa-ambulance"></i>
+            </div>
             <h3 class="title">Resgate</h3>
             <p>
               A maior parte dos resgates são realizados após denúncias recebidas na Instituição Adog, o resgate ocorre
-              com auxílio da Polícia Civil, Centro de Controle de Zoonoses e Vigilância Santitária.
+              com auxílio da Polícia Civil, Centro de Controle de Zoonoses e Vigilância Sanitária.
             </p>
           </div>
-          <div class="cards grid">
-            <div class="card">
-              <i class=""></i>
-              <h3 class="title">Cuidados</h3>
-              <p>
-                Após o resgate os animais são levados a uma clínica veterinária parceira para verificar o estado da
-                saúde e tratar feridas, após a bateria de exames o animal. Após os exames ele recebe banho e
-                alimentação e é encaminhado a Instituição Adog.
-              </p>
+
+          <div class="card">
+            <div class="card-icon">
+              <i class="fas fa-heartbeat"></i>
             </div>
-            <div class="cards grid">
-              <div class="card">
-                <i class=""></i>
-                <h3 class="title">Adoção Responsável</h3>
-                <p>
-                  Após ser castrado e passar pela reabilitação, o animal é encaminhado a adoção responsável. As
-                  pessoas que demonstrarem interesse no animal passam por uma entrevista e uma visita a residência do
-                  futuro tutor. Após as etapas de verificação e o termo de responsabilidade ser assinado o animal é
-                  encaminhado ao novo tutor.
-                </p>
-              </div>
-            </div>
+            <h3 class="title">Cuidados</h3>
+            <p>
+              Após o resgate os animais são levados a uma clínica veterinária parceira para verificar o estado da saúde
+              e tratar feridas, após a bateria de exames o animal recebe banho e alimentação.
+            </p>
           </div>
+
+          <div class="card">
+            <div class="card-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3 class="title">Adoção Responsável</h3>
+            <p>
+              Após ser castrado e passar pela reabilitação, o animal é encaminhado a adoção responsável. Os futuros
+              tutores passam por entrevista e visita domiciliar antes da adoção.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!--CONTACT/ CONTATO-->
+    <!-- CONTACT SECTION -->
     <section class="section" id="contact">
       <div class="container grid">
         <div class="text">
           <h2 class="title adocao">Gostou e quer adotar? Entre em contato com a gente!</h2>
-          <p>
-            Entre em contato com a Adog, para verificar os animais disponíveis ou tirar
-            suas dúvidas.
+          <p class="contact-description">
+            Entre em contato com a Adog, para verificar os animais disponíveis ou tirar suas dúvidas.
           </p>
-          <a href="https://api.whatsapp.com/send?phone=+5511995621457&text=Oi! Quero adotar!" class="button container whatsapp"
-            target="_blank"><i class="icon-whatsapp"></i> Entrar em contato</a>
+
+          <a href="https://www.google.com/" rel="noopener" class="button whatsapp container" target="_blank">
+            <i class="fab fa-whatsapp"></i> Entrar em contato
+          </a>
         </div>
       </div>
-    
 
-    <div class="links container">
-      <ul class="container grid">
-        <li><i class="icon-phone"></i>11 95652-1457</li>
-        <li><i class="icon-location2"></i> Rua Santa Eulália, 86 - Santana</li>
-        <li><i class="icon-envelop"></i>contato@adog.com</li>
-      </ul>
-    </div>
-  </section>
+      <div class="links container">
+        <ul class="container grid contact-info">
+          <li>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <span class="contact-label">Telefone</span>
+                <span class="contact-value">11 95652-1457</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <span class="contact-label">Endereço</span>
+                <span class="contact-value">Rua Santa Eulália, 86 - Santana, São Paulo</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <span class="contact-label">E-mail</span>
+                <span class="contact-value">contato@adog.com</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-
-    <!--HELP/ AJUDA-->
-    <section class="section" id="help">
+    <!-- HELP SECTION -->
+    <section class="section help-section" id="help">
       <div class="container grid">
         <div class="text grid">
-          <h2 class="title">
-            Quer ajudar a Adog?</h2>
-          <p>
+          <h2 class="title">Quer ajudar a Adog?</h2>
+          <p class="help-description">
             Nosso projeto segue vivo graças a ajuda da comunidade, você pode doar através do Paypal, Pix ou diretamente
             na Instituição.
           </p>
+
           <div class="container grid links doacao">
-          <a href="#paypal"><i class="icon-paypal"></i>Adog</a>
-          <a href="#pix"><i class="icon-key"></i>123e4567-e12b-12d1-a456-426655440000</a></div><br>
+            <a href="#paypal" class="donation-link">
+              <i class="fab fa-paypal"></i>
+              <span>Doar via PayPal</span>
+            </a>
+            <a href="#pix" class="donation-link">
+              <i class="fas fa-qrcode"></i>
+              <span>Doar via PIX</span>
+              <small>83f9bfea-78ec-45a1-90e1-cc0f8ecb63e5</small>
+            </a>
+            <a href="#instituicao" class="donation-link">
+              <i class="fas fa-hand-holding-heart"></i>
+              <span>Doar na Instituição</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-
-  <!--FOOTER/ RODAPÉ-->
-  <footer class="section">
+  <!-- FOOTER -->
+  <footer class="section footer">
     <div class="container grid">
       <div class="brand">
-        <a href="#home" class="logo logo-alt">Adog</a>
-        <p>&copy;2021 Instituição Adog</p>
+        <a href="#home" class="logo logo-alt">
+          <i class="fas fa-paw"></i>
+          <span>Adog</span>
+        </a>
+        <p class="copyright">&copy; 2023 Instituição Adog</p>
         <p>Todos os direitos reservados.</p>
       </div>
 
       <div class="social">
-        <a href="https://www.instagram.com/" target="_blank"><i class="icon-instagram"></i>
+        <a href="https://www.instagram.com/" target="_blank" class="social-link" rel="noopener" title="Link Instagram">
+          <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://www.facebook.com/" target="_blank"><i class="icon-facebook"></i>
+        <a href="https://www.facebook.com/" target="_blank" class="social-link" rel="noopener" title="Link Facebook">
+          <i class="fab fa-facebook"></i>
         </a>
-        <a href="https://www.youtube.com/" target="_blank"><i class="icon-youtube"></i>
+        <a href="https://www.youtube.com/" target="_blank" class="social-link" rel="noopener" title="Link Youtube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.google.com/" target="_blank" rel="noopener" class="social-link" title="Link Whatsapp">
+          <i class="fab fa-whatsapp"></i>
         </a>
       </div>
     </div>
   </footer>
 
-  <a href="#home" class="back-to-top"><i class="icon-arrow-up2 back-top"></i></a>
-  <!-- scrollreveal -->
+  <a href="#home" class="back-to-top" title="Voltar ao topo">
+    <i class="fas fa-arrow-up back-top"></i>
+  </a>
+
+  <!-- ScrollReveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
-  <!--MAIN SCRIPT-->
+
+  <!-- Main JavaScript -->
   <script src="main.js"></script>
 </body>
 
