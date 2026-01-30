@@ -1,44 +1,74 @@
-<h1 align="center">Instituição Adog </h1>
+<h1 align="center">🐶 Adog</h1>
 
-<img src="https://github.com/juliabb/adog/blob/main/assets/layout/layout.png?raw=true" align="center">
+<p align="center">
+Landing page institucional moderna e responsiva, desenvolvida com foco em experiência do usuário e boas práticas de Front-end.
+</p>
 
-## 🖥️ Adog
-Projeto de estudo, todas as informações do site são fictícias.
+<p align="center">
+  <a href="https://juliabb.github.io/adog/">
+    <img src="https://github.com/juliabb/adog/blob/main/assets/README/adog%20(720p).gif?raw=true" width="800"/>
+  </a>
+</p>
 
+<p align="center">
+👉 <strong>Clique na imagem para ver o vídeo completo</strong>
+</p>
 
-## 🖱️ Você pode acessar o site clicando [aqui](https://juliabb.github.io/adog/)
-Site está hospedado atráves do Github Pages.
+---
 
- 
-## 🚀 Tecnologias
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+## 🚀 Demo
 
-- HTML
-- CSS
-- JavaScript
+🔗 https://juliabb.github.io/adog/
 
-Bibliotecas
+O projeto está hospedado no GitHub Pages.
 
-- [Google Fonts](https://fonts.google.com/)
-- [ScrollRevel](https://scrollrevealjs.org)
+---
 
-Utilitários
+## 🛠️ Tecnologias
 
-- [Pexels](https://www.pexels.com/pt-br/)
-- [Favicon.io](https://favicon.io/)
+![HTML](https://img.shields.io/badge/HTML-5-orange)
+![CSS](https://img.shields.io/badge/CSS-3-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow)
 
-## 💻 Projeto
+**Bibliotecas**
+- Google Fonts  
+- ScrollReveal  
 
-Adog é uma página institucional no formato One Page, responsiva, para usar em diversos tipos de micro, pequena e média empresas. Contém as seguintes seções: Header, Navigation, Home, Sobre, Como funciona, Contato e Footer
+**Utilitários**
+- Pexels
 
-## 🔖 Layout
-<h2> Desktop </h2>
-<br>
-<img src="https://github.com/juliabb/adog/blob/main/assets/layout/layout-web.png?raw=true" align="center">
+---
 
-<h2> Mobile </h2>
-<br>
-<img src="https://github.com/juliabb/adog/blob/main/assets/layout/layout-mobile.png?raw=true" align="center">
+## 💻 Sobre o projeto
 
-<p align="center"> Feito com :purple_heart: by Julia Benedicto</p> <br>
-<p align="center"><a href="https://myoctocat.com/" target="_blank"> <img src="https://github.com/juliabb/juliabb/blob/main/my-octocat-1632426748808.png?raw=true" alt="Femalecodertocat" width="250" height="250"></a></p>
+O **Adog** é uma landing page institucional no formato One Page, totalmente responsiva e adaptável para diferentes segmentos de mercado.
+
+A aplicação conta com as seguintes seções:
+
+✔️ Header  
+✔️ Navegação fluida  
+✔️ Home  
+✔️ Sobre  
+✔️ Como funciona  
+✔️ Contato  
+✔️ Footer  
+
+---
+
+## 🎯 Objetivo
+
+Este projeto foi desenvolvido para aprimorar habilidades em:
+
+- Estruturação de layouts
+- Responsividade
+- Organização de código
+- Experiência do usuário
+
+## 📚 Aprendizados
+
+Durante o desenvolvimento deste projeto, aprofundei conhecimentos em:
+
+- Design responsivo
+- Hierarquia visual
+- Boas práticas de HTML semântico
+- Organização de estilos
