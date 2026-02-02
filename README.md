@@ -5,13 +5,7 @@ Landing page institucional moderna e responsiva, desenvolvida com foco em experi
 </p>
 
 <p align="center">
-  <a href="https://juliabb.github.io/adog/">
     <img src="https://github.com/juliabb/adog/blob/main/assets/README/adog%20(720p).gif?raw=true" width="800"/>
-  </a>
-</p>
-
-<p align="center">
-👉 <strong>Clique na imagem para ver o vídeo completo</strong>
 </p>
 
 ---
